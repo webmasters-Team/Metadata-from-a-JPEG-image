@@ -1,0 +1,59 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+}
+body {
+	display: grid;
+	place-items: center;
+	font-family: Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+		sans-serif;
+	font-weight: 100;
+}
+#metadata {
+	white-space: pre;
+	background: #f4f4f4;
+	border: 1px solid #ddd;
+	padding: 8px 16px;
+}
+
+h2 {
+	margin: 0;
+}
+
+p {
+	line-height: 1.4em;
+}
+
+code {
+	background: #c0c0c0;
+	padding: 4px 8px;
+	border-radius: 3px;
+	margin: 0 4px;
+}
+
+.sideBySide {
+	display: flex;
+	gap: 10px;
+	margin: 16px 0;
+
+	& .side {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		outline: solid;
+		padding: 8px 16px;
+		width: 50%;
+		overflow: auto;
+	}
+}
+
+#preview {
+	margin: 32px 16px 0;
+}
+
+.app {
+	width: 85vw;
+}

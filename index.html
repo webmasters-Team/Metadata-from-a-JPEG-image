@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webmasters small projects</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="app">
+        <h1>Get Metadata from a JPEG image</h1>
+        <blockquote>Be aware, using my free Groq ratelimits - so maybe you are not so lucky to get a funny comment from llama3-70b-8192 LLM :-)</blockquote>
+        <form id="uploadForm">
+            <input type="file" id="imageInput" accept="image/jpeg">
+        </form>
+        <div id="preview"></div>
+    
+        <div class="sideBySide">
+            <div class="side">
+                <h2>Metadata</h2>
+                <pre id="metadata">Upload an image and your metadata will come here</pre>
+            </div>
+            <div class="side">
+                <h2>Comments for your MetaData</h2>
+                <div id="markdown"></div>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>    
+</body>
+</html>
